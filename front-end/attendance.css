@@ -1,0 +1,100 @@
+.main-header {
+    background: url(img/BG.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    color: #fff;
+  }
+  
+  .main-header .showcase {
+    padding-top: 100px;
+  }
+
+ .card-panel {
+    border-radius: 20px;
+
+  }
+
+  #vertical-nav {
+      border-radius: 20px 0px 0px 20px;
+      margin-bottom: 5px;
+
+  }
+
+  .login {
+    margin-bottom: 80px; 
+    margin-top: 80px;
+
+  }
+
+  #small-card{
+    border-radius: 20px 20px 20px 20px;
+
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+
+  }
+  
+#dashboardadmin{
+  
+  background-color: #f5f5f5;
+}
+
+#dashboardadmin > nav{
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+  
+
+
+
+
+#dashboard-option{
+    margin-top: 100px;
+}
+
+#dashboardnav{
+    display: flex;
+    
+    background-color: #f5f5f5;
+    
+     
+
+}
+
+
+
+.events > 
+
+
+
+
+#main-card{
+      display:flex;
+      
+}
+
+#footer{
+      bottom: 0;
+      width: 100%;
+      position: fixed;
+}
+
+#attendance{
+    
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    padding: 20px;
+    overflow: scroll;
+    
+}
+
+
+
+

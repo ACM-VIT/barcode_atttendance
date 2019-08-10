@@ -1,0 +1,137 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="signup.css" >
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="main-header">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><i class="material-icons">person_add</i> RollCall</a>
+          
+          
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="landingpage.html">Home</a>
+            </li>
+            
+            
+          </ul>
+          
+         
+        </div>
+      </div>
+    </nav>
+
+    <!--Login Form-->
+    <section class="section section-login">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <div class="card-panel login grey lighten-3 blue-text accent-4 center z-depth-2 ">
+                        <h1 class="header">Signup</h1>
+                        <h5 class="caption">Would you like to Sign Up Your Organsiation?</h5>
+                        <form action="landingpage.html">
+
+                            <div class="row">
+                              
+                              <form class="col s12">
+                                <div class="row">
+                                  <div class="input-field white col s12 z-depth-2" id="nameField">
+                                    <i class="material-icons prefix center-align grey-text darken-2">group</i>
+                                    <input type="text" class="grey-text darken-2 validate" id="name">
+                                    <label for="name" class="grey-text darken-2">Organisation Name</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div id="IDField"class="input-field white col s6 z-depth-2">
+                                    <i class="material-icons prefix center-align grey-text darken-2">label</i>
+                                    <input id="ID" type="text" class="validate">
+                                    <label for="ID">Unique ID</label>
+                                  </div>
+                                  
+                                </div>
+                                <div class="row">
+                                  <div class="input-field white col s12 z-depth-2" id="uField">
+                                    <i class="material-icons prefix center-align grey-text darken-2">email</i>
+                                    <input type="email" class="grey-text darken-2 validate" id="email">
+                                    <label for="email" class="grey-text darken-2">Enter Organisation Email</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="input-field white col s12 z-depth-2" id="pField">
+                                    <i class="material-icons prefix center-align grey-text darken-2">lock</i>
+                                    <input type="password" class="grey-text darken-2 validate" id="password">
+                                    <label for="password" class="grey-text darken-2">Enter Organisation Password</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="input-field white col s12 z-depth-2" id="pField">
+                                    <i class="material-icons prefix center-align grey-text darken-2">lock</i>
+                                    <input type="password" class="grey-text darken-2 validate" id="password">
+                                    <label for="password" class="grey-text darken-2">Re-Enter Password</label>
+                                  </div>
+                                </div>  
+                                <div class="row">
+                                  <div class="col s12">                
+                                    <input type="submit" id="Signup" value="Sign Up" class="btn btn-extended btn-large white blue-text accent-4 z-depth-2">
+                                  </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="section purple darken-2 white-text center">
+      <p>RollCall Panel Copyright &copy; 2019</p>
+    </footer>
+  </header>
+
+ 
+
+
+
+ 
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  
+  
+  <script>
+
+    $(document).ready(function () {
+      //Init Side nav
+      $('.button-collapse').sideNav();
+
+    });
+    
+
+      
+      
+      
+
+      
+
+
+
+    
+  </script>
+</body>
+
+</html>

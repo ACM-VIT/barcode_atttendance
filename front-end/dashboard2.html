@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="dashboard.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="main-header">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><i class="material-icons">person_add</i> RollCall</a>
+          <a href="#" data-activates="side-nav" class="button-collapse show-on-med-and-down right">
+            <i class="material-icons">menu</i>
+          </a>
+          
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="landingpage.html">Home</a>
+            </li>
+            <li>
+              <a class="active purple darken-2" id="dashboard-open" href="dashboard.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="signup.html">Sign Up</a>
+            </li>
+            <li>
+              <a href="login.html" class="border transparent waves-effect">Login</a>
+            </li>
+            
+          </ul>
+
+
+          
+          <!--Side Nav-->
+          <ul id="side-nav" class="side-nav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/BG.png" alt="">
+                </div>
+                <a href="#">
+                  <img src="img/Capture.PNG" alt="" class="circle">
+                </a>
+                <a href="#">
+                  <span class="name white-text">John Doe</span>
+                </a>
+                <a href="#">
+                  <span class="name white-text">ACM VIT</span>
+                </a>
+              </div>
+            </li>
+            <li><a href="landingpage.html"><i class="material-icons">home</i> Home</a></li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li class="bold"><a class="collapsible-header waves-effect waves-teal"><i class="material-icons">dashboard</i> Dashboard</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#">Add a New Event</a></li>
+                      <li><a href="#">Attendance (Event Map)</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li><div class="divider"></div></li>
+            <li><a href="login.html" class="waves-effect">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section section-dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m10 l12">
+            <div id="main-card" style="flex-grow: 10" class="card-panel grey lighten-4 blue-text accent-4 center z-depth-2 ">
+              <div  class="flex-container">
+                
+                  <div style="flex-grow: 3">
+                    <ul id="dashboard-option" class="sidenav">
+                      
+                      <li id="vertical-nav" class="active purple darken-2 z-depth-1"><a class="white-text" href="#!"><i class="material-icons">people</i> Attendance   </a></li>
+                      <li id="vertical-nav" class="z-depth-1"><a class="grey-text darken-2 " href="#!"><i class="material-icons">queue</i> Add Event </a></li>
+                      
+                    </ul>
+                  </div>
+                  
+                    
+                    
+                <div id="small-card" style="flex-grow: 7" class="card-panel grey lighten-3 blue-text accent-4 center z-depth-2">
+                    <nav>
+                        <div id="dashboardnav" style="flex-grow: 10" class="purple darken-2 nav-wrapper">
+                            <a href="#" class="brand-logo">Dashboard/<span style="font-size: 20px">Admin</span></a>
+                        </div>
+                    </nav>
+                    
+                    <div class="events" style="flex-grow: 10">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/icons8-people-working-together-50.png">
+                              </div>
+                              <div class="card-content">
+                                <span style="font-size: 8px" class="card-title activator grey-text text-darken-2">31 JUL 2018</span>
+                                <div class="divider"></div>
+                                <span style="font-size: 5px" class="card-title activator purple-text text-darken-2"><b>Core Committee Meeting</b></span>
+                                <p><a href="#"><i class="material-icons right">more_vert</i></a></p>
+                              </div>
+                        </div>
+                        <div class="card">2</div>
+                        <div class="card">3</div>  
+                        <div class="card">4</div>
+                        <div class="card">5</div>
+                        <div class="card">6</div>  
+                        <div class="card">7</div>
+                        <div class="card">8</div>
+                        <div class="card">9</div>
+                        <div class="card">10</div>
+                        <div class="card">11</div>
+                        <div class="card">12</div>
+                        <div class="card">13</div>
+
+
+                    </div>
+                </div>
+            </div>
+                
+                
+                          
+
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+   
+    
+    <footer id="footer" class="section purple darken-2 white-text center">
+      <p>RollCall Panel Copyright &copy; 2019</p>
+    </footer>
+  </header>
+
+  
+ 
+
+
+
+ 
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  
+  
+  <script>
+
+    $(document).ready(function () {
+      //Init Side nav
+      $('.button-collapse').sideNav();
+
+    });
+    
+
+      
+      
+      
+
+      
+
+
+
+    
+  </script>
+</body>
+
+</html>

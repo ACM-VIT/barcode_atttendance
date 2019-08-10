@@ -1,0 +1,49 @@
+input {
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+.main-header {
+    background: url(img/BG.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    color: #fff;
+  }
+  
+  .main-header .showcase {
+    padding-top: 100px;
+  }
+
+   .card-panel {
+    border-radius: 20px;
+    padding: 50px;
+
+  }
+
+  #nameField, #uField, #pfield, #IDfield{
+      border-radius: 20px;
+      width: 100% auto;
+          
+
+
+  }
+  
+  #pfield > input, #ufield > input, #nameField > input, #IDfield > input {
+    height: unset !important;
+    border-radius: 20px;
+  }
+
+
+
+  #Signup{
+      border-radius: 20px;
+  }
+  #footer{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+
