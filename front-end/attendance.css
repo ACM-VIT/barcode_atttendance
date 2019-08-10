@@ -69,7 +69,24 @@
 
 
 
-.events > 
+
+  @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  [id*="small-card"] {
+    width: 100%;
+  }
+  
+
+  [id*="options"] {
+    width: 100%;
+    display: none;
+  }
+
+
+} 
+
+
 
 
 
@@ -93,6 +110,13 @@
     padding: 20px;
     overflow: scroll;
     
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+
 }
 
 

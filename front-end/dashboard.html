@@ -87,10 +87,10 @@
             <div id="main-card" style="flex-grow: 10;  border-radius: 40px" class="card-panel grey lighten-4 blue-text accent-4 center z-depth-2 ">
               <div  class="flex-container" style="width: 100%;">
                 
-                  <div style="flex-grow: 1">
+                  <div style="flex-grow: 1" id="options">
                     <ul id="dashboard-option" class="sidenav">
                       
-                      <li id="vertical-nav" class="active purple darken-2 z-depth-1" style="padding: 5px 8px;"><a class="white-text" href="#!"><i class="material-icons">people</i> Attendance  </a></li>
+                      <li id="vertical-nav" class="active purple darken-2 z-depth-1" style="padding: 5px 8px;"><a class="white-text" href="attendance.html"><i class="material-icons">people</i> Attendance  </a></li>
                       <li id="vertical-nav" class="z-depth-1" style="padding: 5px 8px;"><a class="grey-text darken-2 " href="#!"><i class="material-icons">queue</i> Add Event </a></li>
                       
                     </ul>
@@ -107,6 +107,9 @@
                     </nav>
                     </div>
                     <div class="events">
+                      <div class="white z-depth-2" style="height: 150px; width: 150px; margin: 25px 25px;"></div>
+                      <div class="white z-depth-2" style="height: 150px; width: 150px; margin: 25px 25px;"></div>
+                      <div class="white z-depth-2" style="height: 150px; width: 150px; margin: 25px 25px;"></div>
                       <div class="white z-depth-2" style="height: 150px; width: 150px; margin: 25px 25px;"></div>
                       <div class="white z-depth-2" style="height: 150px; width: 150px; margin: 25px 25px;"></div>
                       <div class="white z-depth-2" style="height: 150px; width: 150px; margin: 25px 25px;"></div>
@@ -150,6 +153,19 @@
     </footer>
   </header>
 
+    <!--Preoader-->
+  <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
   
  
 
@@ -165,11 +181,40 @@
   
   <script>
 
-    $(document).ready(function () {
+
+      $('.section').hide();
+    setTimeout(function(){
+      $(document).ready(function () {
+      
+      // Show Sections
+      $('.section').fadeIn();
+
+      //Hide Preloader
+      $('.loader').fadeOut();
+
+
+     
+
+      $(document).ready(function () {
       //Init Side nav
       $('.button-collapse').sideNav();
 
     });
+    
+
+
+
+
+
+
+
+
+    
+
+      });
+
+
+    },1000);
     
 
       

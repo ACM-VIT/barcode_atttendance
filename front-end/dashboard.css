@@ -91,9 +91,40 @@
   flex-flow: row wrap;
   padding: 20px;
   
-  overflow: scroll;
+  overflow: auto;
   
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  [id*="small-card"] {
+    width: 100%;
+  }
+  
+
+  [id*="options"] {
+    width: 100%;
+    display: none;
+  }
+
+  [id*="events"] {
+    width: 100%;
+  
+  }
+
+
+
+
+} 
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+
+}
+
 
 
 
