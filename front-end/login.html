@@ -43,7 +43,7 @@
                     <div class="card-panel login grey lighten-3 blue-text accent-4 center z-depth-2 ">
                         <h1 class="header">Welcome!</h1>
                         <h5 class="caption">Sign In with Your Organisation</h5>
-                        <form>
+                        <form action="landingpage.html">
                             <div class="input-field white z-depth-2" id="ufield">
                                 <i class="material-icons prefix center-align grey-text darken-2">email</i>
                                 <input type="email" class="grey-text darken-2" id="email">
@@ -65,8 +65,8 @@
                             </div>
                             
                             
-                            <input type="submit" method="post" value="Login" onclick="loadDoc()" class="btn btn-extended btn-large blue accent-4 white-text z-depth-2">
-                            <input type="submit" method="post" value="Sign Up" class="btn btn-extended btn-large white blue-text accent-4 z-depth-2">
+                            <input type="submit" value="Login" class="btn btn-extended btn-large blue accent-4 white-text z-depth-2">
+                            <input type="submit" value="Sign Up" class="btn btn-extended btn-large white blue-text accent-4 z-depth-2">
                         </form>
                     </div>
                 </div>
@@ -137,17 +137,6 @@
 
 
     },1000);
-
-    $(document).ready(function() {
-            //option A
-            $("form").submit(function(e){
-                
-                e.preventDefault(e);
-            });
-        });
-
-
-
     
 
       
@@ -160,25 +149,6 @@
 
     
   </script>
-   
-<script>
-
-  function loadDoc() {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       
-        var a = document.getElementById("email").innerHTML = this.responseText;
-                
-        var b = document.getElementById("password").innerHTML = this.responseText;
-      }
-    };
-    xhr.open("POST", "https://7b0af6f0.ngrok.io/acm/login.php", true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    data = {uniqueid: a, password: b};
-    xhr.send("data");
-  }
-</script>
 </body>
 
 </html>
