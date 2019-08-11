@@ -1,0 +1,48 @@
+nav ul li a{
+    color:grey;
+  }
+  .c
+  {
+    color:blue;
+  }
+  .r
+  {
+    color: blue;
+    font:bolder;
+  }
+  .imp
+  { height:5px;
+    width:5px;
+ }
+ .pic1 , .pic3a
+ { padding: 10px;
+    width: 500px;
+    float: right;
+ }
+ .pic2, .pic4
+ {
+     float:left;
+     padding:10px;
+     width:500px;
+ }
+ .pic3b
+ {
+     float:right;
+     width:300px;
+ }
+ .card1 ,.card3
+ {
+     float:left;
+
+     padding: 10px;
+     border-radius: 10px;
+     
+ }
+ .card2 , .card4
+ {   float:right;
+    
+     padding: 10px;
+     border-radius: 10px;
+    
+
+ }
