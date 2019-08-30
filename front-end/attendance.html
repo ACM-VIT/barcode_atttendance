@@ -85,10 +85,20 @@
         <div class="row">
           <div class="col s12 m10 l12">
             <div id="main-card" style="flex-grow: 10;  border-radius: 40px" class="card-panel grey lighten-4 blue-text accent-4 center z-depth-2 ">
-              <div  class="flex-container" style="width: 100%;">
+                <div  class="flex-container" id="flex-container" style="width: 100%;">
+                    <div class="row show-on-phone flex-container" style="width: 100%; display: block;" id="hidden-options">
+                            
+                        <div id="horizontal-nav" style="flex-grow: 4; flex-direction: row" class="col s6 active purple darken-2 z-depth-1" style="padding: 5px 8px; border-radius: 20px 20px 0px 0px"><a class="white-text" href="#!"><i class="material-icons">people</i> Attendance  </a></div>
+                        <div id="horizontal-nav" style="flex-grow: 4; flex-direction: row"  class="col s6 z-depth-1" style="padding: 5px 8px; border-radius: 20px 20px 0px 0px"><a class="grey-text darken-2 " href="#!"><i class="material-icons">queue</i> Add Event </a></div>
+                      
+                    </div>
+                  
+              <div  class="flex-container" id="flex-options" style="width: 100%;">
+                  
+                  
                 
                   <div style="flex-grow: 1"  id="options">
-                    <ul id="dashboard-option" class="sidenav">
+                    <ul id="dashboard-option" class="hide-on-small-only sidenav">
                       
                       <li id="vertical-nav" class="active purple darken-2 z-depth-1" style="padding: 5px 8px;"><a class="white-text" href="#!"><i class="material-icons">people</i> Attendance  </a></li>
                       <li id="vertical-nav" class="z-depth-1" style="padding: 5px 8px;"><a class="grey-text darken-2 " href="#!"><i class="material-icons">queue</i> Add Event </a></li>
@@ -106,8 +116,15 @@
                         </div>
                     </nav>
                     </div>
+
+                   
                     
                     <div id="attendance">
+                          <!--HIDDEN CLASS ON WIDER SCREENS-->
+                        
+                      
+                        
+                        
                         <div class="white z-depth-2" style="border-radius: 20px; height: 30px; margin-bottom:20px;"></div>
                         <div class="white z-depth-2" style="border-radius: 20px; height: 30px; margin-bottom:20px;"></div>  
                         <div class="white z-depth-2" style="border-radius: 20px; height: 30px; margin-bottom:20px;"></div>
@@ -122,6 +139,7 @@
                         <div class="white z-depth-2" style="border-radius: 20px; height: 30px; margin-bottom:20px;"></div>
                     </div>
                 </div>
+                
             </div>
             </div>
                 
@@ -158,6 +176,8 @@
       </div>
     </div>
 
+
+
   
  
 
@@ -190,6 +210,8 @@
       $('.button-collapse').sideNav();
 
     });
+
+
     
 
 

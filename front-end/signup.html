@@ -50,15 +50,19 @@
                               <form class="col s12">
                                 <div class="row">
                                   <div class="input-field white col s12 z-depth-2" id="nameField">
+                                    <div class="row">
                                     <i class="material-icons prefix center-align grey-text darken-2">group</i>
-                                    <input type="text" class="grey-text darken-2 validate" id="name">
+                                    
                                     <label for="name" class="grey-text darken-2">Organisation Name</label>
+                                    </div>
+
+                                    <input type="text" class=" grey-text darken-2 validate" id="name">
                                   </div>
                                 </div>
                                 <div class="row">
-                                  <div id="IDField"class="input-field white col s6 z-depth-2">
+                                  <div id="IDField" class="input-field white col s6 z-depth-2">
                                     <i class="material-icons prefix center-align grey-text darken-2">label</i>
-                                    <input id="ID" type="text" class="validate">
+                                    <input id="ID" type="text" class="input validate">
                                     <label for="ID">Unique ID</label>
                                   </div>
                                   
@@ -66,21 +70,21 @@
                                 <div class="row">
                                   <div class="input-field white col s12 z-depth-2" id="uField">
                                     <i class="material-icons prefix center-align grey-text darken-2">email</i>
-                                    <input type="email" class="grey-text darken-2 validate" id="email">
+                                    <input type="email" class="input grey-text darken-2 validate" id="email">
                                     <label for="email" class="grey-text darken-2">Enter Organisation Email</label>
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="input-field white col s12 z-depth-2" id="pField">
                                     <i class="material-icons prefix center-align grey-text darken-2">lock</i>
-                                    <input type="password" class="grey-text darken-2 validate" id="password">
+                                    <input type="password" class="input grey-text darken-2 validate" id="password">
                                     <label for="password" class="grey-text darken-2">Enter Organisation Password</label>
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="input-field white col s12 z-depth-2" id="pField">
                                     <i class="material-icons prefix center-align grey-text darken-2">lock</i>
-                                    <input type="password" class="grey-text darken-2 validate" id="password">
+                                    <input type="password" class="input grey-text darken-2 validate" id="password">
                                     <label for="password" class="grey-text darken-2">Re-Enter Password</label>
                                   </div>
                                 </div>  
@@ -137,6 +141,10 @@
 
       //Hide Preloader
       $('.loader').fadeOut();
+
+      $('.input-field').click((e)=>{
+        e.target.children[1].focus()
+      })
 
 
      

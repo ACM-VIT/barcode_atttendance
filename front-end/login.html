@@ -46,13 +46,13 @@
                         <form>
                             <div class="input-field white z-depth-2" id="ufield">
                                 <i class="material-icons prefix center-align grey-text darken-2">email</i>
-                                <input type="email" class="grey-text darken-2" id="email">
-                                <label for="" class="grey-text darken-2" for="email">Email Address</label>
+                                <input type="text" class="grey-text darken-2" id="email">
+                                <label for="email" class="grey-text darken-2" for="email">Organisation Id</label>
                             </div>
                             <div class="input-field white z-depth-2" id="pfield">
                                 <i class="material-icons prefix grey-text darken-2 ">lock</i>
                                 <input type="password" class="grey-text darken-2" id="password">
-                                <label for="" class="grey-text darken-2" for="password">Password</label>
+                                <label for="password" class="grey-text darken-2" for="password">Password</label>
                             </div>
 
 
@@ -65,8 +65,8 @@
                             </div>
                             
                             
-                            <input type="submit" method="post" value="Login" onclick="loadDoc()" class="btn btn-extended btn-large blue accent-4 white-text z-depth-2">
-                            <input type="submit" method="post" value="Sign Up" class="btn btn-extended btn-large white blue-text accent-4 z-depth-2">
+                            <input id='login-btn' type="submit" method="post" value="Login" onclick="myFunction1()" class="btn btn-extended btn-large blue accent-4 white-text z-depth-2">
+                            <input type="submit" id="signup-btn" method="post" value="Sign Up" onclick="myFunction2()" class="btn btn-extended btn-large white blue-text accent-4 z-depth-2" >
                         </form>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
         </div>
       </div>
     </div>
-
+    
  
 
 
@@ -115,28 +115,19 @@
 
       //Hide Preloader
       $('.loader').fadeOut();
-
-
-     
-
-      
-
-    
-    
-
-
-
-
-
-
-
-
-    
-
       });
 
 
     },1000);
+
+    function myFunction1() {
+    document.getElementById("login-btn").style.setProperty('color',"white", 'important');
+    document.getElementById("login-btn").style.setProperty('background-color',"orange", 'important');
+    } 
+    function myFunction2() {
+    document.getElementById("signup-btn").style.setProperty('color',"white", 'important');
+    document.getElementById("signup-btn").style.setProperty('background-color',"purple", 'important');
+    }
 
     $(document).ready(function() {
             //option A
@@ -144,39 +135,48 @@
                 
                 e.preventDefault(e);
             });
-        });
-
-
-
-    
-
-      
-      
-      
-
-      
-
-
-
-    
+        });    
   </script>
-   
 <script>
-
+  var a,b;
   function loadDoc() {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
+      a = document.getElementById("email").value;
+
+      b = document.getElementById("password").value;
+      token=localStorage.getItem('token')
+      console.log(a);
+
+      $.ajax({
+        url:"https://cb676842.ngrok.io/acm/login.php?token="+token,
+        type:"POST",
+        data :{uniqueid: a, password: b},
+        // error: (e)=>{
+        //   console.log('Error')
+        //   // console.log(e.response)
+        // }
+      }).done((data)=>{
+          console.log(data)
+      }).catch((e)=>{
+        console.log('err')
+      })
+    // var xhttps = new XMLHttpRequest();
+    // xhttps.open("POST", "https://cb676842.ngrok.io/acm/login.php", true);
+    // xhttps.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // data = {uniqueid: a, password: b};
+    // // data=JSON.stringify(data);
+    // console.log(data);
+
+    // xhttps.onreadystatechange = function() {
+    //   if (this.readyState == 4 && this.status == 200) {
        
-        var a = document.getElementById("email").innerHTML = this.responseText;
-                
-        var b = document.getElementById("password").innerHTML = this.responseText;
-      }
-    };
-    xhr.open("POST", "https://7b0af6f0.ngrok.io/acm/login.php", true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    data = {uniqueid: a, password: b};
-    xhr.send("data");
+        // a = document.getElementById("email").value;
+
+        // b = document.getElementById("password").value;
+        // console.log(a);
+    //   }
+    // };
+    
+    // xhttps.send("data:data);
   }
 </script>
 </body>
