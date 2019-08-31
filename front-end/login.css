@@ -26,12 +26,13 @@ input {
   #pfield, #ufield{
     border-radius: 20px;
     width: 100% auto;
-     
+    padding: 10px;
   }
 
   #pfield > input, #ufield > input {
     height: unset !important;
     border-radius: 20px;
+    margin-bottom: 0;
   }
 
 
