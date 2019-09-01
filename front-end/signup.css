@@ -25,12 +25,8 @@ input {
   #nameField, #uField, #pfield, #IDfield{
       border-radius: 20px;
       width: 100% auto;
-      align-items: center!important;
-      align-content: center!important;
-      align-self: center!important;
-      justify-content: center!important;
-      justify-items: center!important;
-      text-justify: center!important;
+          
+
 
   }
   

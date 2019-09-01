@@ -50,13 +50,9 @@
                               <form class="col s12">
                                 <div class="row">
                                   <div class="input-field white col s12 z-depth-2" id="nameField">
-                                    <div class="row">
                                     <i class="material-icons prefix center-align grey-text darken-2">group</i>
-                                    
+                                    <input type="text" class="input grey-text darken-2 validate" id="name">
                                     <label for="name" class="grey-text darken-2">Organisation Name</label>
-                                    </div>
-
-                                    <input type="text" class=" grey-text darken-2 validate" id="name">
                                   </div>
                                 </div>
                                 <div class="row">
@@ -143,6 +139,7 @@
       $('.loader').fadeOut();
 
       $('.input-field').click((e)=>{
+
         e.target.children[1].focus()
       })
 
