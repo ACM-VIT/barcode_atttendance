@@ -1,0 +1,133 @@
+.main-header {
+  background: url(img/BG.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 750px;
+  color: #fff;
+}
+
+.main-header .showcase {
+  padding-top: 100px;
+}
+
+.card-panel {
+  border-radius: 20px;
+
+}
+
+#vertical-nav {
+    border-radius: 20px 0px 0px 20px;
+    margin-bottom: 5px;
+ 
+}
+
+#vertical-nav > a{
+  width: 100%;
+  justify-content: center;
+
+}
+
+
+
+#card{
+  border-radius: 20px 20px 20px 20px;
+  width:600px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+
+}
+
+
+
+
+
+
+#dashboard-option{
+  margin-top: 100px;
+  width: 100%;
+}
+
+#dashboardnav{
+  display: flex;
+  width: 100%;
+  
+   
+
+}
+
+#dashboardadmin > nav{
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.events > .white{
+  border-radius: 20px;
+}
+
+
+
+
+
+
+#main-card{
+    display:flex;
+    
+}
+
+#footer{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.events{
+  
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 20px;
+  
+  overflow: auto;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  
+  [id*="small-card"] {
+    width: 100%;
+  }
+  
+
+  [id*="options"] {
+    width: 100%;
+    display: none;
+  }
+
+  [id*="events"] {
+    width: 100%;
+  
+  }
+ [id*="innercard"]{
+   width:100%
+ }
+
+
+
+} 
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+
+}
+
+
+
+
+
