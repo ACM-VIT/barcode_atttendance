@@ -74,11 +74,23 @@
 
 #main-card{
     display:flex;
+    margin-bottom:100px!important;
       
 }
 
+body{
+  position:relative!important;
+}
 
+footer{
+  bottom: 0!important;
+  width: 100%;
+  position: absolute !important;
+}
 
+.show-on-phone{
+  display: none!important;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -125,19 +137,10 @@
 
 
 
-footer{
-  bottom: 0px;
-  width: 100%;
-  /* position: absolute !important; */
-  
-}
 
-.show-on-phone{
-  display: none!important;
-}
 
 #cardholder{
-  padding: 30px 30px 30px 30px !important;
+  padding: 30px 0px !important;
   margin: auto;
   display: -webkit-flex !important; /* Safari */
   -webkit-flex-wrap: wrap !important; /* Safari 6.1+ */
